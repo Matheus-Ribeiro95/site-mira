@@ -3603,12 +3603,11 @@
     };
 
     if (mobileCheck()) {
-
-    } else {
-        document.querySelector(".tm_pb_slide_content p").style.fontSize = "42px";
         document.querySelectorAll(".missaoVisao")[0].classList.add("noPadding");
         document.querySelectorAll(".missaoVisao")[1].classList.add("noPadding");
         document.querySelector(".valores").classList.add("noPadding");
+    } else {
+        document.querySelector(".tm_pb_slide_content p").style.fontSize = "42px";
     }
 </script>
 </body>
