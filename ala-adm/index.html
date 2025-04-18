@@ -1911,6 +1911,23 @@
     .servicoInformativo {
         text-align: center;
         font-weight: 300;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis "... mais";
+
+        color: rgba(255, 255, 255, 0.5);
+
+        cursor: pointer;
+    }
+
+    .servicoInformativo.expandido {
+        white-space: wrap;
+        cursor: text;
+    }
+
+    .servicoInformativo > span
+    {
+        color: #fff;
     }
 
     .missaoVisao {
@@ -2004,29 +2021,83 @@
                                                     <div class="tm_pb_slider tm_pb_slider_0 tm_pb_slider_fullwidth_off  tm_pb_slider_no_pagination    tm_pb_module">
                                                         <div class="tm_pb_slides">
                                                             <div class="tm_pb_slide tm_pb_bg_layout_light tm_pb_media_alignment_center tm_pb_slide_0 tm-pb-active-slide"
-                                                                 style='background-color:#ffffff;background-image:url(./images/2016-06-image36.jpg);'>
+                                                                 style='background-color:#ffffff;background-image:url(./images/banner.png);'>
                                                                 <div class="tm_pb_container clearfix">
-                                                                    <div class="tm_pb_slide_description"><h2
-                                                                            class="tm_pb_slide_title"><a style="padding: 0 !important;" href="#sobreNos">Assessoria
-                                                                        Administrativa</a></h2>
-                                                                        <div class="tm_pb_slide_content"><p style="font-size: 29px; font-weight: 200;"
-                                                                                style="text-align: center;">Gestão e
-                                                                            Organização que transformam.</p></div>
-                                                                        <a href="#sobreNos"
-                                                                           class="tm_pb_more_button tm_pb_button">Saiba
-                                                                            mais</a></div>
+                                                                    <div class="tm_pb_slide_description"></div>
                                                                     <!-- .tm_pb_slide_description --></div>
                                                                 <!-- .tm_pb_container --></div> <!-- .tm_pb_slide -->
                                                         </div><!-- .tm_pb_slides --> </div><!-- .tm_pb_slider --></div>
                                                 <!-- .tm_pb_column --></div> <!-- .tm_pb_row -->
                                         </div><!-- .tm_pb_section -->
 
-                                        <div id="sobreNos" class="tm_pb_section  tm_pb_section_2 tm_section_regular tm_section_transparent">
+                                        <div id="missao" class="tm_pb_section  tm_pb_section_2 tm_section_regular tm_section_transparent">
+                                            <div class="container">
+                                                <div class="container">
+                                                    <div class="row tm_pb_row tm_pb_row_11">
+                                                        <div class="missaoVisao tm_pb_column tm_pb_column_1_3 tm_pb_column_9 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
+                                                                <h2 class="mb-5"><span class="foco">MISSÃO</span></h2>
+                                                                <p class="textoInformativo">A missão da MIRA é ser a ponte
+                                                                    confiável entre empresas e
+                                                                    profissionais qualificados, oferecendo
+                                                                    soluções personalizadas e eficientes
+                                                                    em recrutamento, seleção e gestão de
+                                                                    mão de obra. Nosso compromisso é
+                                                                    garantir que nossos clientes possam
+                                                                    concentrar-se em suas atividades
+                                                                    principais, enquanto asseguramos a
+                                                                    gestão eficaz de seu pessoal, com foco
+                                                                    em excelência operacional e segurança
+                                                                    em todos os processos.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="missaoVisao tm_pb_column tm_pb_column_1_3 tm_pb_column_9 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
+                                                                <h2 class="mb-5"><span class="foco">VISÃO</span></h2>
+                                                                <p class="textoInformativo">Ser reconhecida como a principal
+                                                                    empresa de gestão de mão de obra no
+                                                                    mercado, destacando-se pela
+                                                                    inovação, eficiência e capacidade de
+                                                                    adaptação às necessidades dinâmicas
+                                                                    dos nossos clientes. Almejamos liderar
+                                                                    o setor com uma estrutura robusta e
+                                                                    em constante evolução, garantindo
+                                                                    independência financeira e um
+                                                                    impacto positivo e duradouro para
+                                                                    nossos clientes e colaboradores.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="valores tm_pb_column tm_pb_column_1_2  tm_pb_column_19 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
+                                                                <h2 class="mb-5"><span class="foco">VALORES</span></h2>
+                                                                <div class="textoInformativo"><p>Eficiência: Comprometimento com a entrega ágil e eficaz de nossos serviços,
+                                                                    garantindo a satisfação dos clientes.</p>
+                                                                    <p>Inovação: Busca contínua por tecnologias e métodos avançados que aprimorem
+                                                                        nossos processos e serviços.</p>
+                                                                    <p>Segurança: Priorização da segurança nas contratações e na gestão de mão de obra,
+                                                                        assegurando confiança para contratantes e trabalhadores.</p>
+                                                                    <p>Excelência: Manutenção de altos padrões de qualidade em todas as nossas
+                                                                        operações e interações.</p>
+                                                                    <p>Flexibilidade: Capacidade de adaptar-se rapidamente às demandas do mercado e às
+                                                                        necessidades específicas de nossos clientes.</p>
+                                                                    <p>Integridade: Atuação com transparência e ética em todas as nossas relações
+                                                                        comerciais e trabalhistas.</p></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="sobreNos" class="tm_pb_section  tm_pb_section_2 tm_pb_section_22 tm_section_regular tm_section_transparent">
                                             <div class="container">
                                                 <div class="row tm_pb_row tm_pb_row_11">
                                                     <div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_19 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                                         <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
-                                                            <h2 class="mb-5">SOBRE NÓS</h2>
+                                                            <h2 class="mb-5"><span class="foco">SOBRE NÓS</span></h2>
                                                             <p class="textoInformativo">A MIRA inicia sua atividade
                                                                 no ano de
                                                                 2021 após uma avaliação de necessidade do mercado, onde
@@ -2054,66 +2125,6 @@
                                             </div>
                                         </div> <!-- .tm_pb_section -->
 
-                                        <div id="missao" class="tm_pb_section  tm_pb_section_2 tm_section_regular tm_section_transparent">
-                                            <div class="container">
-                                                <div class="container">
-                                                    <div class="row tm_pb_row tm_pb_row_11">
-                                                        <div class="missaoVisao tm_pb_column tm_pb_column_1_3 tm_pb_column_9 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
-                                                                <h2 class="mb-5">MISSÃO</h2>
-                                                                <p class="textoInformativo">A missão da MIRA é ser a ponte
-                                                                    confiável entre empresas e
-                                                                    profissionais qualificados, oferecendo
-                                                                    soluções personalizadas e eficientes
-                                                                    em recrutamento, seleção e gestão de
-                                                                    mão de obra. Nosso compromisso é
-                                                                    garantir que nossos clientes possam
-                                                                    concentrar-se em suas atividades
-                                                                    principais, enquanto asseguramos a
-                                                                    gestão eficaz de seu pessoal, com foco
-                                                                    em excelência operacional e segurança
-                                                                    em todos os processos.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="missaoVisao tm_pb_column tm_pb_column_1_3 tm_pb_column_9 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
-                                                                <h2 class="mb-5">VISÃO</h2>
-                                                                <p class="textoInformativo">Ser reconhecida como a principal
-                                                                    empresa de gestão de mão de obra no
-                                                                    mercado, destacando-se pela
-                                                                    inovação, eficiência e capacidade de
-                                                                    adaptação às necessidades dinâmicas
-                                                                    dos nossos clientes. Almejamos liderar
-                                                                    o setor com uma estrutura robusta e
-                                                                    em constante evolução, garantindo
-                                                                    independência financeira e um
-                                                                    impacto positivo e duradouro para
-                                                                    nossos clientes e colaboradores.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="valores tm_pb_column tm_pb_column_1_2  tm_pb_column_19 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                                            <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
-                                                                <h2 class="mb-5">VALORES</h2>
-                                                                <div class="textoInformativo"><p>Eficiência: Comprometimento com a entrega ágil e eficaz de nossos serviços,
-                                                                    garantindo a satisfação dos clientes.</p>
-                                                                    <p>Inovação: Busca contínua por tecnologias e métodos avançados que aprimorem
-                                                                        nossos processos e serviços.</p>
-                                                                    <p>Segurança: Priorização da segurança nas contratações e na gestão de mão de obra,
-                                                                        assegurando confiança para contratantes e trabalhadores.</p>
-                                                                    <p>Excelência: Manutenção de altos padrões de qualidade em todas as nossas
-                                                                        operações e interações.</p>
-                                                                    <p>Flexibilidade: Capacidade de adaptar-se rapidamente às demandas do mercado e às
-                                                                        necessidades específicas de nossos clientes.</p>
-                                                                    <p>Integridade: Atuação com transparência e ética em todas as nossas relações
-                                                                        comerciais e trabalhistas.</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
                                         <div id="servicos" class="tm_pb_section tm_pb_section_parallax  tm_pb_section_9 tm_pb_with_background tm_section_regular">
                                             <div class="tm_parallax_bg tm_pb_parallax_css"
@@ -2138,12 +2149,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar de Logística</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar de Logística é responsável por apoiar as operações
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar de Logística é responsável por apoiar as operações
                                                                         logísticas de uma empresa. Suas funções incluem o controle de
                                                                         estoque, separação e conferência de mercadorias, organização
                                                                         do armazenamento e distribuição de produtos. Esse profissional
                                                                         garante que os processos logísticos ocorram de forma eficiente
-                                                                        e dentro dos prazos estabelecidos.</p></div>
+                                                                        e dentro dos prazos estabelecidos.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2157,12 +2168,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar de Almoxarife</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar de Almoxarife atua no controle e organização do
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar de Almoxarife atua no controle e organização do
                                                                         estoque de materiais de uma empresa. Ele é responsável por
                                                                         receber, conferir e armazenar produtos, além de manter
                                                                         registros atualizados sobre a entrada e saída de materiais. Sua
                                                                         função é essencial para assegurar que o almoxarifado funcione
-                                                                        de maneira organizada e eficiente.</p></div>
+                                                                        de maneira organizada e eficiente.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2176,12 +2187,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar Administrativo</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar Administrativo desempenha tarefas de apoio nas
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar Administrativo desempenha tarefas de apoio nas
                                                                         rotinas administrativas de uma organização. Suas
                                                                         responsabilidades incluem o atendimento ao público,
                                                                         organização de documentos, controle de agendas e suporte na
                                                                         elaboração de relatórios. Este profissional contribui para o bom
-                                                                        funcionamento do ambiente de trabalho.</p></div>
+                                                                        funcionamento do ambiente de trabalho.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2198,12 +2209,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Administrativo</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Administrativo tem um papel mais avançado nas
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Administrativo tem um papel mais avançado nas
                                                                         atividades administrativas, oferecendo suporte direto a gerentes
                                                                         e outros profissionais. Ele pode ser responsável pela gestão de
                                                                         correspondências, elaboração de planilhas e relatórios, além de
                                                                         auxiliar na coordenação de eventos e reuniões. Sua função é
-                                                                        vital para a eficiência administrativa da empresa.</p></div>
+                                                                        vital para a eficiência administrativa da empresa.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2217,12 +2228,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Financeiro</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Financeiro auxilia nas atividades do departamento
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Financeiro auxilia nas atividades do departamento
                                                                         financeiro, como o controle de contas a pagar e receber,
                                                                         conciliação bancária, emissão de notas fiscais e elaboração de
                                                                         relatórios financeiros. Este profissional garante que as
                                                                         operações financeiras sejam realizadas com precisão e dentro
-                                                                        das normas estabelecidas.</p></div>
+                                                                        das normas estabelecidas.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2236,13 +2247,13 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Recepcionista</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">A Recepcionista é o primeiro ponto de contato em uma
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>A Recepcionista é o primeiro ponto de contato em uma
                                                                         Empresa, responsável por receber e direcionar visitantes,
                                                                         atender chamadas telefônicas e gerenciar correspondências.
                                                                         Além disso, ela pode auxiliar na organização de agendas e
                                                                         fornecer informações básicas sobre a empresa. Uma
                                                                         recepcionista eficiente contribui para uma boa impressão inicial
-                                                                        da organização.</p></div>
+                                                                        da organização.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2259,11 +2270,11 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Técnico de Higienização</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Técnico de Higienização atua na limpeza e
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Técnico de Higienização atua na limpeza e
                                                                         manutenção de ambientes, garantindo que as normas de higiene
                                                                         e segurança sejam seguidas. Ele pode trabalhar em diferentes
                                                                         setores, como hospitais, indústrias e escritórios, assegurando
-                                                                        que os locais estejam sempre limpos e adequados para uso.</p></div>
+                                                                        que os locais estejam sempre limpos e adequados para uso.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2277,12 +2288,12 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Higienizador</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Higienizador é responsável pela limpeza e conservação de
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Higienizador é responsável pela limpeza e conservação de
                                                                         ambientes, garantindo que estejam sempre em condições
                                                                         adequadas de uso. Ele realiza a higienização de superfícies,
                                                                         equipamentos e instalações, contribuindo para um ambiente
                                                                         seguro e saudável. Esse profissional pode atuar em diversos
-                                                                        setores, como saúde, indústria e comércio.</p></div>
+                                                                        setores, como saúde, indústria e comércio.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2296,7 +2307,7 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Técnico Higienizador de Tecnologia em Saúde</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Técnico Higienizador de Tecnologia em Saúde é especializado
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Técnico Higienizador de Tecnologia em Saúde é especializado
                                                                         na limpeza e desinfecção de equipamentos médicos e
                                                                         tecnológicos em ambientes de saúde. Sua função é crucial para
                                                                         prevenir infecções e garantir que os equipamentos estejam
@@ -2308,7 +2319,7 @@
                                                                         assegurar que todos os dispositivos estejam em condições
                                                                         ideais para uso. Nosso trabalho é essencial para manter a
                                                                         integridade dos procedimentos de saúde e a segurança dos
-                                                                        pacientes e profissionais.</p></div>
+                                                                        pacientes e profissionais.</span></p></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3213,7 +3224,11 @@
 
     .tm_pb_builder #tm_builder_outer_content .tm_pb_section_2 {
         padding-top: 70px;
-        padding-bottom: 120px;
+    }
+
+    .tm_pb_builder #tm_builder_outer_content .tm_pb_section_22 {
+        padding-top: 70px;
+        padding-bottom: 120px !important;
     }
 
     .tm_pb_builder #tm_builder_outer_content .tm_pb_section_3 {
@@ -3547,6 +3562,24 @@
 <script type="text/javascript" src="./js/power-builder-framework-assets-js-libs-jquery.easypiechart.js"
         id="easypiechart-js"></script> <!-- {%FOOTER_LINK} -->
 <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        const _lazySetup = () => {
+            const servicos = document.querySelectorAll(".servicoInformativo");
+
+            if (!servicos) return setTimeout(() => {
+                _lazySetup();
+            }, 100);
+
+            servicos.forEach(e => {
+                e.onclick = (event) => {
+                    event.target.parentElement.classList.add("expandido");
+                };
+            });
+        }
+
+        _lazySetup();
+    });
+
     function openLink(url) {
         window.open(url, "_blank");
     }

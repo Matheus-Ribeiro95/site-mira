@@ -10,8 +10,10 @@
     --e-global-color-692844a0: #001748;
     --e-global-color-d6b3167: #D8132491;
     --e-global-typography-primary-font-family: "Teko";
+    --e-global-typography-primary-font-family: "Montserrat";
     --e-global-typography-primary-font-weight: 600;
     --e-global-typography-secondary-font-family: "Teko";
+    --e-global-typography-secondary-font-family: "Montserrat";
     --e-global-typography-secondary-font-weight: 400;
     --e-global-typography-text-font-family: "Heebo";
     --e-global-typography-text-font-weight: 400;
@@ -74,6 +76,38 @@
     font-weight: 400;
 }
 
+.elementor-element-d5703ca-1 {
+    background-image: url("../../../../wp-content/uploads/2024/11/tipo-contrato-preventivo-anual.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    padding: 0 !important;
+}
+
+.elementor-element-d5703ca-2 {
+    background-image: url("../../../../wp-content/uploads/2024/11/tipo-contrato-auditoria-consultoria.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    padding: 0 !important;
+}
+
+.elementor-element-d5703ca-3 {
+    background-image: url("../../../../wp-content/uploads/2024/11/tipo-contrato-treinamento-capacitacao.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    padding: 0 !important;
+}
+
+.elementor-element-d5703ca-4 {
+    background-image: url("../../../../wp-content/uploads/2024/11/contrato-personalizado-prefeituras.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    padding: 0 !important;
+}
+
 .elementor-kit-11 h6 {
     color: #272727;
     font-family: "Open Sans", Sans-serif;
@@ -83,6 +117,10 @@
 
 .elementor-section.elementor-section-boxed > .elementor-container {
     max-width: 1140px;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container.bigImages {
+    max-width: 95%;
 }
 
 .e-con {

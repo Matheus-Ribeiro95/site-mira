@@ -5,9 +5,10 @@
 
 .elementor-15 .elementor-element.elementor-element-16a4a949:not(.elementor-motion-effects-element-type-background), .elementor-15 .elementor-element.elementor-element-16a4a949 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("../../../../wp-content/uploads/2024/11/slider-h1200.png");
-    background-position: 65% 0px;
+    background-position: 0 55%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 900px;
 }
 
 .elementor-15 .elementor-element.elementor-element-16a4a949 > .elementor-background-overlay {
@@ -2828,12 +2829,13 @@ body:not(.rtl) .elementor-15 .elementor-element.elementor-element-581a234 .eleme
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {    
     .elementor-15 .elementor-element.elementor-element-16a4a949:not(.elementor-motion-effects-element-type-background), .elementor-15 .elementor-element.elementor-element-16a4a949 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
         background-image: url("../../../../wp-content/uploads/2024/11/slider-h1200.png");
-        background-position: 100% 0px;
+        background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        height: 300px;
     }
 
     .elementor-15 .elementor-element.elementor-element-16a4a949 > .elementor-container {
@@ -3055,6 +3057,7 @@ body:not(.rtl) .elementor-15 .elementor-element.elementor-element-581a234 .eleme
 
     .elementor-15 .elementor-element.elementor-element-256a988b .elementor-heading-title {
         font-size: 40px;
+        margin-left: 2rem;
     }
 
     .elementor-15 .elementor-element.elementor-element-2d7cd296 {
