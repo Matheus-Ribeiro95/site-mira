@@ -49,7 +49,7 @@
                 </div>
                 <h2 class="text-2xl font-bold text-gray-800 mb-3">Administrativo</h2>
                 <p class="text-gray-600 text-center mb-6">Acesse recursos de gestão, RH, financeiro e administração geral da empresa.</p>
-                <a href="ala-adm" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
+                <a href="#" onclick="redirectToSector('administrativo')" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
                     Acessar Setor
                 </a>
             </div>
@@ -61,22 +61,37 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                     </svg>
                 </div>
-                <h2 class="text-2xl font-bold text-gray-800 mb-3">Manutenção</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Operacional</h2>
                 <p class="text-gray-600 text-center mb-6">Acesse sistemas de produção, logística, suporte técnico e operações diárias.</p>
-                <a href="ala-manutencao" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
+                <a href="#" onclick="redirectToSector('operacional')" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
                     Acessar Setor
                 </a>
             </div>
         </div>
         
         <footer class="mt-20 text-center text-gray-600">
-            <p>© <span id="current-year">2025</span> Mira. Todos os direitos reservados.</p>
+            <p>© <span id="current-year">2025</span> Sua Empresa. Todos os direitos reservados.</p>
         </footer>
     </div>
     
     <script>
         // Atualiza o ano atual no rodapé
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Função de redirecionamento
+        function redirectToSector(sector) {
+            // Aqui você pode definir as URLs reais para cada setor
+            const urls = {
+                'administrativo': 'https://admin.suaempresa.com',
+                'operacional': 'https://ops.suaempresa.com'
+            };
+            
+            // Simula um redirecionamento (em produção, substitua pelo redirecionamento real)
+            alert(`Redirecionando para o setor ${sector}...\nURL: ${urls[sector]}`);
+            
+            // Descomente a linha abaixo para fazer o redirecionamento real
+            // window.location.href = urls[sector];
+        }
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e24a8822fb1af4',t:'MTc0Njk3Mjk1NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe>
 </body></html>

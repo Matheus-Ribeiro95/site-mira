@@ -1909,25 +1909,17 @@
     }
 
     .servicoInformativo {
-        text-align: center;
-        font-weight: 300;
-        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis "... mais";
-
-        color: rgba(255, 255, 255, 0.5);
-
-        cursor: pointer;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-bottom: 8px;
     }
 
     .servicoInformativo.expandido {
-        white-space: wrap;
-        cursor: text;
-    }
-
-    .servicoInformativo > span
-    {
-        color: #fff;
+        display: block;
     }
 
     .missaoVisao {
@@ -2030,6 +2022,39 @@
                                                 <!-- .tm_pb_column --></div> <!-- .tm_pb_row -->
                                         </div><!-- .tm_pb_section -->
 
+                                        <div id="sobreNos" class="tm_pb_section  tm_pb_section_2 tm_pb_section_22 tm_section_regular tm_section_transparent">
+                                            <div class="container">
+                                                <div class="row tm_pb_row tm_pb_row_11">
+                                                    <div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_19 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                        <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
+                                                            <h2 class="mb-5"><span class="foco">SOBRE NÓS</span></h2>
+                                                            <p class="textoInformativo">A MIRA inicia sua atividade
+                                                                no ano de
+                                                                2021 após uma avaliação de necessidade do mercado, onde
+                                                                muitas empresas voltando a funcionar pós pandemia
+                                                                necessitaram de Contratação e Gestão de mão de obra para
+                                                                sua
+                                                                reabertura.<br/>Uma empresa que interligava o elo entre
+                                                                duas
+                                                                pontas, contratante e mão de obra, se fazia necessária
+                                                                no
+                                                                momento, a Mira nasce para encurtar o caminho entre os 2
+                                                                lados, trazendo segurança na contratação para ambos os
+                                                                lados
+                                                                Principal Objetivo da MIRA é a prestação de serviços por
+                                                                meio de uma gestão focada na eficiência de métodos e
+                                                                processos, de uma estrutura consistente em constante
+                                                                aprimoramento, com a união dos recursos humanos
+                                                                capacitados
+                                                                e as mais avançadas tecnologias, com solidez,
+                                                                independência
+                                                                financeira e excelência no mercado.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div id="missao" class="tm_pb_section  tm_pb_section_2 tm_section_regular tm_section_transparent">
                                             <div class="container">
                                                 <div class="container">
@@ -2091,41 +2116,6 @@
                                             </div>
                                         </div>
 
-
-                                        <div id="sobreNos" class="tm_pb_section  tm_pb_section_2 tm_pb_section_22 tm_section_regular tm_section_transparent">
-                                            <div class="container">
-                                                <div class="row tm_pb_row tm_pb_row_11">
-                                                    <div class="tm_pb_column tm_pb_column_4_4  tm_pb_column_19 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                                        <div class="tm_pb_text tm_pb_module tm_pb_bg_layout_light tm_pb_text_align_center  tm_pb_text_3">
-                                                            <h2 class="mb-5"><span class="foco">SOBRE NÓS</span></h2>
-                                                            <p class="textoInformativo">A MIRA inicia sua atividade
-                                                                no ano de
-                                                                2021 após uma avaliação de necessidade do mercado, onde
-                                                                muitas empresas voltando a funcionar pós pandemia
-                                                                necessitaram de Contratação e Gestão de mão de obra para
-                                                                sua
-                                                                reabertura.<br/>Uma empresa que interligava o elo entre
-                                                                duas
-                                                                pontas, contratante e mão de obra, se fazia necessária
-                                                                no
-                                                                momento, a Mira nasce para encurtar o caminho entre os 2
-                                                                lados, trazendo segurança na contratação para ambos os
-                                                                lados
-                                                                Principal Objetivo da MIRA é a prestação de serviços por
-                                                                meio de uma gestão focada na eficiência de métodos e
-                                                                processos, de uma estrutura consistente em constante
-                                                                aprimoramento, com a união dos recursos humanos
-                                                                capacitados
-                                                                e as mais avançadas tecnologias, com solidez,
-                                                                independência
-                                                                financeira e excelência no mercado.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> <!-- .tm_pb_section -->
-
-
                                         <div id="servicos" class="tm_pb_section tm_pb_section_parallax  tm_pb_section_9 tm_pb_with_background tm_section_regular">
                                             <div class="tm_parallax_bg tm_pb_parallax_css"
                                                  style="background-image: url(./images/2016-05-image33.jpg);"></div>
@@ -2149,12 +2139,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar de Logística</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar de Logística é responsável por apoiar as operações
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar de Logística é responsável por apoiar as operações
                                                                         logísticas de uma empresa. Suas funções incluem o controle de
                                                                         estoque, separação e conferência de mercadorias, organização
                                                                         do armazenamento e distribuição de produtos. Esse profissional
                                                                         garante que os processos logísticos ocorram de forma eficiente
-                                                                        e dentro dos prazos estabelecidos.</span></p></div>
+                                                                        e dentro dos prazos estabelecidos.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2168,12 +2161,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar de Almoxarife</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar de Almoxarife atua no controle e organização do
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar de Almoxarife atua no controle e organização do
                                                                         estoque de materiais de uma empresa. Ele é responsável por
                                                                         receber, conferir e armazenar produtos, além de manter
                                                                         registros atualizados sobre a entrada e saída de materiais. Sua
                                                                         função é essencial para assegurar que o almoxarifado funcione
-                                                                        de maneira organizada e eficiente.</span></p></div>
+                                                                        de maneira organizada e eficiente.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2187,12 +2183,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Auxiliar Administrativo</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Auxiliar Administrativo desempenha tarefas de apoio nas
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Auxiliar Administrativo desempenha tarefas de apoio nas
                                                                         rotinas administrativas de uma organização. Suas
                                                                         responsabilidades incluem o atendimento ao público,
                                                                         organização de documentos, controle de agendas e suporte na
                                                                         elaboração de relatórios. Este profissional contribui para o bom
-                                                                        funcionamento do ambiente de trabalho.</span></p></div>
+                                                                        funcionamento do ambiente de trabalho.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2209,12 +2208,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Administrativo</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Administrativo tem um papel mais avançado nas
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Administrativo tem um papel mais avançado nas
                                                                         atividades administrativas, oferecendo suporte direto a gerentes
                                                                         e outros profissionais. Ele pode ser responsável pela gestão de
                                                                         correspondências, elaboração de planilhas e relatórios, além de
                                                                         auxiliar na coordenação de eventos e reuniões. Sua função é
-                                                                        vital para a eficiência administrativa da empresa.</span></p></div>
+                                                                        vital para a eficiência administrativa da empresa.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2228,12 +2230,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Financeiro</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Financeiro auxilia nas atividades do departamento
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Financeiro auxilia nas atividades do departamento
                                                                         financeiro, como o controle de contas a pagar e receber,
                                                                         conciliação bancária, emissão de notas fiscais e elaboração de
                                                                         relatórios financeiros. Este profissional garante que as
                                                                         operações financeiras sejam realizadas com precisão e dentro
-                                                                        das normas estabelecidas.</span></p></div>
+                                                                        das normas estabelecidas.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2247,13 +2252,16 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Recepcionista</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>A Recepcionista é o primeiro ponto de contato em uma
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">A Recepcionista é o primeiro ponto de contato em uma
                                                                         Empresa, responsável por receber e direcionar visitantes,
                                                                         atender chamadas telefônicas e gerenciar correspondências.
                                                                         Além disso, ela pode auxiliar na organização de agendas e
                                                                         fornecer informações básicas sobre a empresa. Uma
                                                                         recepcionista eficiente contribui para uma boa impressão inicial
-                                                                        da organização.</span></p></div>
+                                                                        da organização.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2270,11 +2278,14 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Assistente Técnico de Higienização</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Assistente Técnico de Higienização atua na limpeza e
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Assistente Técnico de Higienização atua na limpeza e
                                                                         manutenção de ambientes, garantindo que as normas de higiene
                                                                         e segurança sejam seguidas. Ele pode trabalhar em diferentes
                                                                         setores, como hospitais, indústrias e escritórios, assegurando
-                                                                        que os locais estejam sempre limpos e adequados para uso.</span></p></div>
+                                                                        que os locais estejam sempre limpos e adequados para uso.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2288,12 +2299,15 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Higienizador</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Higienizador é responsável pela limpeza e conservação de
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Higienizador é responsável pela limpeza e conservação de
                                                                         ambientes, garantindo que estejam sempre em condições
                                                                         adequadas de uso. Ele realiza a higienização de superfícies,
                                                                         equipamentos e instalações, contribuindo para um ambiente
                                                                         seguro e saudável. Esse profissional pode atuar em diversos
-                                                                        setores, como saúde, indústria e comércio.</span></p></div>
+                                                                        setores, como saúde, indústria e comércio.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2307,7 +2321,7 @@
                                                                     class="tm-waypoint tm_pb_animation_off"/>
                                                                 </div>
                                                                 <div class="tm_pb_blurb_container"><h4 style="color: #FFFFFF !important;">Técnico Higienizador de Tecnologia em Saúde</h4>
-                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo"><span>O Técnico Higienizador de Tecnologia em Saúde é especializado
+                                                                    <div class="tm_pb_blurb_content"><p class="servicoInformativo">O Técnico Higienizador de Tecnologia em Saúde é especializado
                                                                         na limpeza e desinfecção de equipamentos médicos e
                                                                         tecnológicos em ambientes de saúde. Sua função é crucial para
                                                                         prevenir infecções e garantir que os equipamentos estejam
@@ -2319,7 +2333,10 @@
                                                                         assegurar que todos os dispositivos estejam em condições
                                                                         ideais para uso. Nosso trabalho é essencial para manter a
                                                                         integridade dos procedimentos de saúde e a segurança dos
-                                                                        pacientes e profissionais.</span></p></div>
+                                                                        pacientes e profissionais.</p>
+
+                                                                        <a class="expandirTexto" data-parent="p.servicoInformativo" href="">ver mais...</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3228,7 +3245,10 @@
 
     .tm_pb_builder #tm_builder_outer_content .tm_pb_section_22 {
         padding-top: 70px;
-        padding-bottom: 120px !important;
+    }
+
+    .valores {
+        padding-bottom: 70px;
     }
 
     .tm_pb_builder #tm_builder_outer_content .tm_pb_section_3 {
@@ -3564,7 +3584,7 @@
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
         const _lazySetup = () => {
-            const servicos = document.querySelectorAll(".servicoInformativo");
+            const servicos = document.querySelectorAll(".expandirTexto");
 
             if (!servicos) return setTimeout(() => {
                 _lazySetup();
@@ -3572,7 +3592,13 @@
 
             servicos.forEach(e => {
                 e.onclick = (event) => {
-                    event.target.parentElement.classList.add("expandido");
+                    event.preventDefault();
+
+                    const target = event.target;
+
+                    target.previousElementSibling.classList.add("expandido");
+
+                    target.outerHTML = "";
                 };
             });
         }
@@ -3592,11 +3618,7 @@
     return check;
     };
 
-    if (mobileCheck()) {
-        document.querySelectorAll(".missaoVisao")[0].classList.add("noPadding");
-        document.querySelectorAll(".missaoVisao")[1].classList.add("noPadding");
-        document.querySelector(".valores").classList.add("noPadding");
-    } else {
+    if (!mobileCheck()) {
         document.querySelector(".tm_pb_slide_content p").style.fontSize = "42px";
     }
 </script>

@@ -2987,6 +2987,11 @@
     .tm-hide-mobile {
         display: none !important;
     }
+
+    .missaoVisao .valores {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 #tm_builder_outer_content .tm-pb-icon:before {
     display: inline-block;

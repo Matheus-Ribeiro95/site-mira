@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento - Nome da Empresa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+        
+        .sectors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .sector-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .sector-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .sector-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        
+        .sector-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .sector-description {
+            margin-bottom: 25px;
+            color: #7f8c8d;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .sector-card {
+                padding: 20px;
+            }
+            
+            .sector-icon {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .sectors {
+                gap: 20px;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Substitua pelo logo da sua empresa -->
+            <img src="logo-empresa.png" alt="Logo da Empresa" class="logo">
+            <h1>Bem-vindo ao Portal Interno</h1>
+            <p class="subtitle">Selecione o setor que deseja acessar</p>
+        </header>
+        
+        <div class="sectors">
+            <!-- Card do Setor 1 -->
+            <div class="sector-card">
+                <div class="sector-icon">📊</div>
+                <h2 class="sector-title">Setor Administrativo</h2>
+                <p class="sector-description">Acesso aos sistemas de gestão, relatórios financeiros e ferramentas administrativas da empresa.</p>
+                <a href="https://link-para-setor-administrativo.com" class="btn">Acessar Setor</a>
+            </div>
+            
+            <!-- Card do Setor 2 -->
+            <div class="sector-card">
+                <div class="sector-icon">👨‍💻</div>
+                <h2 class="sector-title">Setor de TI</h2>
+                <p class="sector-description">Acesso aos sistemas técnicos, suporte e ferramentas de desenvolvimento da empresa.</p>
+                <a href="https://link-para-setor-ti.com" class="btn">Acessar Setor</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Nome da Empresa. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

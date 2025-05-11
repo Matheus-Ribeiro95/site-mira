@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento - Setores da Empresa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a365d;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .sectors-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        
+        .sector-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .sector-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .sector-header {
+            padding: 25px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .sector-1 .sector-header {
+            background-color: #4299e1;
+            color: white;
+        }
+        
+        .sector-2 .sector-header {
+            background-color: #48bb78;
+            color: white;
+        }
+        
+        .sector-content {
+            padding: 25px;
+        }
+        
+        .description {
+            margin-bottom: 25px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #1a365d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .sector-1 .btn:hover {
+            background-color: #2c5282;
+        }
+        
+        .sector-2 .btn:hover {
+            background-color: #38a169;
+        }
+        
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .sectors-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 20px;
+            }
+            
+            .sector-header {
+                padding: 15px;
+                font-size: 20px;
+            }
+            
+            .sector-content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">LOGO</div>
+            <h1>Portal de Redirecionamento</h1>
+            <p class="subtitle">Escolha o setor que deseja acessar</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="sectors-container">
+            <div class="sector-card sector-1">
+                <div class="sector-header">
+                    Setor Administrativo
+                </div>
+                <div class="sector-content">
+                    <p class="description">
+                        Acesse o portal do setor administrativo para gerenciar documentos, processos internos, recursos humanos e outras atividades administrativas da empresa.
+                    </p>
+                    <a href="#setor-administrativo" class="btn">Acessar Setor Administrativo</a>
+                </div>
+            </div>
+            
+            <div class="sector-card sector-2">
+                <div class="sector-header">
+                    Setor Comercial
+                </div>
+                <div class="sector-content">
+                    <p class="description">
+                        Acesse o portal do setor comercial para gerenciar vendas, acompanhar metas, visualizar relatórios de desempenho e interagir com a equipe de vendas.
+                    </p>
+                    <a href="#setor-comercial" class="btn">Acessar Setor Comercial</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript para redirecionamento
+        document.addEventListener('DOMContentLoaded', function() {
+            const adminButton = document.querySelector('.sector-1 .btn');
+            const commercialButton = document.querySelector('.sector-2 .btn');
+            
+            adminButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Substitua com a URL real do setor administrativo
+                alert('Redirecionando para o portal do Setor Administrativo...');
+                // window.location.href = 'https://administrativo.suaempresa.com';
+            });
+            
+            commercialButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Substitua com a URL real do setor comercial
+                alert('Redirecionando para o portal do Setor Comercial...');
+                // window.location.href = 'https://comercial.suaempresa.com';
+            });
+        });
+    </script>
+</body>
+</html>
