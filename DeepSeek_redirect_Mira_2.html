@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Corporativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --dark-blue: #003366;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #495057;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            height: 100vh;
+            /* overflow: hidden; */
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        header {
+            background-color: var(--white);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 40px;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .user-icon {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex-grow: 1;
+        }
+        
+        .sector-option {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sector-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.1) 0%, rgba(0, 51, 102, 0.05) 100%);
+            z-index: -1;
+        }
+        
+        .sector-option:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow);
+        }
+        
+        .sector-option:hover::before {
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.15) 0%, rgba(0, 51, 102, 0.1) 100%);
+        }
+        
+        .sector-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-blue);
+        }
+        
+        .sector-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark-blue);
+            text-align: center;
+        }
+        
+        .sector-description {
+            font-size: 1rem;
+            text-align: center;
+            max-width: 400px;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .access-btn {
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-blue);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .sector-option:hover .access-btn {
+            background-color: var(--dark-blue);
+        }
+        
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sector-option {
+                padding: 3rem 1.5rem;
+            }
+            
+            .sector-icon {
+                font-size: 3rem;
+            }
+            
+            .sector-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .sector-icon {
+                font-size: 2.5rem;
+            }
+            
+            .sector-title {
+                font-size: 1.3rem;
+            }
+            
+            .sector-description {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo-empresa.png" alt="Logo da Empresa" class="logo">
+            <div class="user-info">
+                <span class="user-icon"><i class="fas fa-user-circle"></i></span>
+                <span>Bem-vindo, Usuário</span>
+            </div>
+        </header>
+        
+        <div class="sectors-grid">
+            <a href="LINK_DO_SETOR_1" class="sector-option">
+                <div class="sector-icon"><i class="fas fa-building"></i></div>
+                <h2 class="sector-title">Administrativo</h2>
+                <p class="sector-description">Acesso aos sistemas de gestão empresarial, relatórios financeiros e ferramentas administrativas</p>
+                <div class="access-btn">Acessar Setor</div>
+            </a>
+            
+            <a href="LINK_DO_SETOR_2" class="sector-option">
+                <div class="sector-icon"><i class="fas fa-laptop-code"></i></div>
+                <h2 class="sector-title">Tecnologia</h2>
+                <p class="sector-description">Acesso aos sistemas técnicos, infraestrutura de TI e ferramentas de desenvolvimento</p>
+                <div class="access-btn">Acessar Setor</div>
+            </a>
+        </div>
+        
+        <footer>
+            <p>© 2023 Nome da Empresa. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
