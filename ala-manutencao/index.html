@@ -559,7 +559,33 @@
         .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
             background-image: none !important;
         }
-    }</style>
+    }
+
+    .contratos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem {
+        flex: 1 1 50%; /* 2 por linha com espaçamento */
+        max-width: 50%;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .imagem {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+    </style>
 </head>
 
 <body class="home page-template page-template-elementor_header_footer page page-id-15 wp-custom-logo ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-15">
@@ -1904,88 +1930,13 @@
                                 </div>
                             </div>
                         </section>
-                        <section
-                                class="elementor-section elementor-inner-section elementor-element elementor-element-7e773461 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default"
-                                data-id="7e773461" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default contratos-container">
 
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element"
-                                     data-id="d5703ca" data-element_type="column"
-                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                    <div class="elementor-widget-wrap elementor-element-populated elementor-element-d5703ca-1">
-                                        <div class="elementor-element elementor-element-6bfa4b6 elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                             data-id="6bfa4b6" data-element_type="widget"
-                                             data-widget_type="image-box.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image-box-wrapper">
-                                                    <div class="elementor-image-box-content">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element"
-                                     data-id="d5703ca" data-element_type="column"
-                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                    <div class="elementor-widget-wrap elementor-element-populated elementor-element-d5703ca-2">
-                                        <div class="elementor-element elementor-element-6bfa4b6 elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                             data-id="6bfa4b6" data-element_type="widget"
-                                             data-widget_type="image-box.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image-box-wrapper">
-                                                    <div class="elementor-image-box-content">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section
-                                class="elementor-section elementor-inner-section elementor-element elementor-element-3508359 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default"
-                                data-id="3508359" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default contratos-container">
-                                
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element"
-                                     data-id="d5703ca" data-element_type="column"
-                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                    <div class="elementor-widget-wrap elementor-element-populated elementor-element-d5703ca-3">
-                                        <div class="elementor-element elementor-element-6bfa4b6 elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                             data-id="6bfa4b6" data-element_type="widget"
-                                             data-widget_type="image-box.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image-box-wrapper">
-                                                    <div class="elementor-image-box-content">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element"
-                                     data-id="d5703ca" data-element_type="column"
-                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                    <div class="elementor-widget-wrap elementor-element-populated elementor-element-d5703ca-4">
-                                        <div class="elementor-element elementor-element-6bfa4b6 elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                             data-id="6bfa4b6" data-element_type="widget"
-                                             data-widget_type="image-box.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image-box-wrapper">
-                                                    <div class="elementor-image-box-content">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </section>
+                        <div class="contratos">
+                            <div class="imagem"><img src="wp-content/uploads/2024/11/tipo-contrato-preventivo-anual.png"></div>
+                            <div class="imagem"><img src="wp-content/uploads/2024/11/tipo-contrato-auditoria-consultoria.png"></div>
+                            <div class="imagem"><img src="wp-content/uploads/2024/11/tipo-contrato-treinamento-capacitacao.png"></div>
+                            <div class="imagem"><img src="wp-content/uploads/2024/11/contrato-personalizado-prefeituras.png"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2073,7 +2024,7 @@
                                              data-widget_type="icon-list.default">
                                             <div class="elementor-widget-container">
                                                 <ul class="elementor-icon-list-items">
-                                                    <li class="elementor-iconos de contrato-list-item">
+                                                    <li class="elementor-iconos de contratoos de contrato-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker" viewbox="0 0 384 512"
                                  xmlns="http://www.w3.org/2000/svg"><path
