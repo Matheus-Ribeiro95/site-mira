@@ -116,6 +116,42 @@
         padding: 0 !important;
     }</style>
     <style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff !important;
+        border-radius: 50px;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+        z-index: 2;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.05);
+        text-decoration: none !important;
+    }
+
+    .whatsapp-button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+        .whatsapp-button img {
+            margin-right: 0;
+        }
+        .whatsapp-button .text {
+            display: none;
+        }
+    }
+
     .wp-block-button__link {
         color: #fff;
         background-color: #32373c;
@@ -589,6 +625,14 @@
 </head>
 
 <body class="home page-template page-template-elementor_header_footer page page-id-15 wp-custom-logo ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-15">
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/5518996591362" 
+   class="whatsapp-button" 
+   target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <span class="text">Contato WhatsApp</span>
+</a>
+
 <div id="page" class="hfeed site">
 
     <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
@@ -682,11 +726,17 @@
 				</span>
                                         <span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-bc5fe72"
-                       href="https://www.facebook.com/miraadm.ata" target="_blank" rel="nofollow">
+                       href="https://www.facebook.com/profile.php?id=61565660662342" target="_blank" rel="nofollow">
 						<span class="elementor-screen-only">Facebook</span>
 						<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"><path
                                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+                <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-repeater-item-bc5fe72"
+                       href="mailto:comercial@miraadm.com.br" target="_blank" rel="nofollow">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>					</a>
 				</span>
                                     </div>
                                 </div>
@@ -2065,7 +2115,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="elementor-icon-list-item">
-                                                        <a href="https://www.facebook.com/miraadm.ata" target="_blank"
+                                                        <a href="https://www.facebook.com/profile.php?id=61565660662342" target="_blank"
                                                            rel="nofollow">
 
 												<span class="elementor-icon-list-icon">
@@ -2141,11 +2191,17 @@
 				</span>
                                             <span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-bc5fe72"
-                       href="https://www.facebook.com/miraadm.ata" target="_blank" rel="nofollow">
+                       href="https://www.facebook.com/profile.php?id=61565660662342" target="_blank" rel="nofollow">
 						<span class="elementor-screen-only">Facebook</span>
 						<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"><path
                                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+                <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-repeater-item-bc5fe72"
+                       href="mailto:comercial@miraadm.com.br" target="_blank" rel="nofollow">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>					</a>
 				</span>
                                         </div>
                                     </div>

@@ -117,6 +117,42 @@
     <link rel='stylesheet' id='wp-block-library-css' href='./css/dist-block-library-style.min.css' type='text/css'
           media='all'/>
     <style id='classic-theme-styles-inline-css' type='text/css'> /*! This file is auto-generated */
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff !important;
+        border-radius: 50px;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+        z-index: 2;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.05);
+        text-decoration: none !important;
+    }
+
+    .whatsapp-button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+        .whatsapp-button img {
+            margin-right: 0;
+        }
+        .whatsapp-button .text {
+            display: none;
+        }
+    }
+
     .wp-block-button__link {
         color: #fff;
         background-color: #32373c;
@@ -1225,15 +1261,8 @@
         color: #ffffff;
     }
 
-    /* #ToTop button */
-    #toTop {
-        color: #ffffff;
-        background-color: #001748;
-    }
+    /* WhatsApp button */
 
-    #toTop:hover {
-        background-color: #ffffff;
-    }
 
     /* #Page Preloader */
     .page-preloader__cube:before {
@@ -1938,6 +1967,13 @@
     <link rel="stylesheet" href="css/elementor-assets-lib-font-awesome-css-font-awesome.min.css">
 </head>
 <body class="home page-template-default page page-id-130 custom-background header-layout-fullwidth content-layout-fullwidth footer-layout-fullwidth blog-default position-fullwidth sidebar-1-4 tm_pb_builder elementor-default elementor-kit-1676">
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/5518996591362" 
+   class="whatsapp-button" 
+   target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <span class="text">Contato WhatsApp</span>
+</a>
 <div class="page-preloader-cover">
     <div class="page-preloader ball-grid-pulse">
         <div></div>
@@ -1985,7 +2021,7 @@
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/miraadm.ata"><span class="screen-reader-text">Instagram</span></a>
                                 </li>
                                 <li id="menu-item-116"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/miraadm.ata"><span
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61565660662342"><span
                                         class="screen-reader-text">Facebook</span></a></li>
                                 <li id="menu-item-117"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117"><a target="_blank" rel="noopener noreferrer" href="mailto:comercial@miraadm.com.br"><span class="screen-reader-text">Email</span></a>
@@ -2500,7 +2536,7 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/miraadm.ata"><span class="screen-reader-text">Instagram</span></a>
                         </li>
                         <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/miraadm.ata"><span
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61565660662342"><span
                                 class="screen-reader-text">Facebook</span></a></li>
                         <li
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117"><a target="_blank" rel="noopener noreferrer" href="mailto:comercial@miraadm.com.br"><span class="screen-reader-text">Email</span></a>
